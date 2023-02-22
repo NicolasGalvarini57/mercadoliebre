@@ -7,12 +7,18 @@ const path = require("path");
 app.use(express.static("public"));
 
 
+const port = process.env.PORT || 3000;
+
+
+
 app.get("/", function(req, res){
     res.sendFile(path.resolve(__dirname,"./views/index.html"))
 });
 
 
-app.listen(3030, function(){
-    console.log("servidor corriendo")
+
+
+app.listen(port, function(){
+    console.log("servidor corriendo " + port)
 });
 
