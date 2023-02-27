@@ -18,7 +18,9 @@ app.get("/", function(req, res){
 app.get("/contacto", function(req, res){
     res.sendFile(path.resolve(__dirname,"./views/contacto.html"))
 });
-
+app.get("/", function(req, res){
+    res.sendFile(path.resolve(__dirname,"./views/index.html"))
+});
 
 
 app.listen(port, function(){

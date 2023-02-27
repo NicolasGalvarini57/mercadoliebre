@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
+    <link rel="stylesheet" href="/css/contacto.css">
 </head>
 
 <body>
+    <div class="formulario">
+
+    
     <div class="contacto">
     <nav>
         <ul>
-        <li><a href="/inicio">Inicio</a></li>
+        <li><a href="/">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
-        <li><a href="/contacto">contacto</a></li>
+        <li><a href="/Contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <h1>Inicio de Seccion</h1>
+  
 
     <section class="capturaDatos">
+        <h1>Inicio de Seccion</h1>
         <form action="" method="post" encty="multipart/form-data">
+            <div class="cajas">
             <div>
                 <label for="nombre">Nombre *</label>
                 <br>
@@ -33,15 +39,16 @@
                 <input type="text" name="apellido" placeholder="Indique su apellido">
 
             </div>
-            <div>
-                <input type="submit" value="enviar mis comentarios">
-            </div>
 
             <div>
                 <label for="email">Email</label>
                 <br>
                 <input type="email" name="email" placeholder="Indique su email">
 
+            </div>
+        </div>
+            <div class="EnviarDatos">
+                <input type="submit" value="ENVIAR DATOS">
             </div>
         </form>
     </section>
