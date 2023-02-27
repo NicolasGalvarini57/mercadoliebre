@@ -15,6 +15,9 @@ app.get("/", function(req, res){
     res.sendFile(path.resolve(__dirname,"./views/index.html"))
 });
 
+app.get("/contacto", function(req, res){
+    res.sendFile(path.resolve(__dirname,"./views/contacto.html"))
+});
 
 
 
